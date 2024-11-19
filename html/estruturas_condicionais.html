@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/variaveis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link do FontAwesome -->
+    <!--tenho que sair da pasta, entrar na css e acessar o arquivo index.css-->
+    <title>Por onde começar em Tecnologia?</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+
+        <div class="logomenu" onclick='interagemenu()'>&#9776;</div>
+
+
+        <div class="inicio">
+            <a href="index.htmlhtml">início</a>
+
+        </div>
+        <div class="temas">
+            <a href="fontes.html">fontes</a>
+        </div>
+        <div class="historia">
+            <a href="maquinas_mecanicas.html">história</a>
+        </div>
+        <div class="estudo">
+            <a href="como_estudar.html">estudo</a>
+        </div>
+
+    </header>
+    <!--NAV (menu)-->
+
+    <!--mesma coisa, crio a div do menu lateral e seu id para referenciá-la-->
+    <nav id="menulateral">
+        <div class="x" onclick="interagemenu()"> &times; </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="operadores_aritmeticos_english.html">
+            <span class="english">Versão em Inglês</span>
+        </a>
+        <h3>Assuntos Principais</h3>
+        <a href="logica_de_programacao.html">lógica</a>
+        <a href="algoritmo_código_fonte_e_programa.html">algoritmos</a>
+        <a href="variaveis.html">variáveis</a>
+        <a href="escreva_leia.html">escreva e leia</a>
+        <a href="operadores_aritmeticos.html">operadores</a>
+        <a href="estruturas_condicionais.html">estruturas condicionais</a>
+        <a href="lacos_de_repeticao.html">laços de repetição</a>
+        <a href="funcoes.html">funções</a>
+        <a href="programacao_orientada_a_objetos.html">programação orientada a objetos</a>
+    </nav>
+    <!-- ela-->
+
+
+    <!--MAIN-->
+    <main>
+        <!--REGRA DE LOCALIZAÇÃO: o que é, onde esta, quantidade/numeração-->
+
+        <div class="titulo_subtitulo">
+            <h1>Estruturas Condicionais</h1> <br>
+            <p>o primeiro assunto legal</p>
+        </div>
+
+        <div class="primeiro_paragrafo">
+            <span class="centralizar">Vamos explorar estes termos...</span><br>
+            As estruturas condicionais permitem que um programa execute diferentes comandos de acordo com as condições
+            estabelecidas. É o famoso "se isso, então faça isso... senão faça aquilo." Elas estão presentes em diversas
+            linguagens de programação e todo profissional da área
+            precisa saber como utilizá-las. Elas ajudam a decidir qual caminho o programa deve seguir com base no que é
+            verdadeiro ou falso. Isso é essencial em quase toda aplicação, já que muitas vezes precisamos fazer decisões
+            como "Se a idade for maior que 18, então a pessoa é maior de idade", ou "Se o número é positivo, então exiba
+            'Positivo'". O uso dessas condições torna o código mais flexível e inteligente, pois ele pode se adaptar a
+            diferentes situações.
+            <br>
+            <span class="centralizar">Se (if)</span><br>
+            <br>
+            <br>
+            <br>
+            Vamos começar do básico.
+            A estrutura condicional mais simples é o if (se). Ele verifica uma condição e, se essa condição for
+            verdadeira, executa um bloco de código. Se for falsa, o programa segue para a próxima linha. Às vezes,
+            usamos o else (senão) para executar um bloco de código alternativo, caso a condição não seja verdadeira.
+            Além disso, podemos usar o else if para verificar várias condições diferentes, oferecendo múltiplas
+            possibilidades. Vamos fazer um exemplo para testar se uma pessoa pode tomar bebidas alcólicas baseando em
+            sua idade:
+            <span class="codigo">
+                inteiro idade;<br>
+
+                escreva ("Digite sua idade");<br>
+                leia (idade);<br>
+
+                se(idade => 18){<br>
+                escreva ("Pode tomar.")<br>
+                }<br>
+
+            </span>
+            <br><br><br>
+            Neste exemplo, a variável idade é usada para armazenar a idade de uma pessoa. Se a idade for 18 ou mais, a
+            condição if será verdadeira, e a mensagem "Pode beber" será exibida.
+        </div>
+
+        <div class="parallax2">
+        </div>
+
+        <div class="segundo_paragrafo">
+            <br>
+            <span class="centralizar">Else (senão)</span><br>
+            Podemos juntar este exemplo com outra estrutura condicional, o senão. Aqui ele verificará o contrário. Se
+            não foi atingido as espectativas:
+            <br>
+            <span class="codigo">
+                inteiro idade;<br>
+
+                escreva ("Digite sua idade");<br>
+                leia (idade);<br>
+
+                se(idade => 18){<br>
+                escreva ("Pode tomar.")<br>
+                }<br>
+                senão{<br>
+                escreva ("Não pode tomar.")<br>
+                }
+            </span>
+            <br>
+            <br>
+            Neste exemplo simples com apenas uma variável é possível demonstrar "um zilhão" de possiblidades com as
+            estruturas condicionais if (se) e else (senão).
+            <br>
+            <br>
+            <br>
+            <span class="centralizar">Concluindo...</span><br>
+            As estruturas condicionais permitem
+            que o código tome decisões baseadas em condições específicas, tornando a programação mais dinâmica. Com elas
+            é possível criar interações muito mais interessantes e complexas. O uso de if, else if e else oferece
+            flexibilidade para implementar diferentes comportamentos
+            dependendo do contexto, o que é essencial para criar aplicativos interativos e inteligentes. Se arrisca em tentar outros exemplos?
+        <br>
+        <br>
+        <br>
+        
+        </div>
+
+        <div class="proxima_anterior">
+            <div class="anterior">
+                <a href="operadores_logicos.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="proxima">
+                <a href="lacos_de_repeticao.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="secaodofooter">
+            <a href="index.html">inicio</a>
+            <a href="algoritmo_código_fonte_e_programa_english.html">algoritmos</a>
+            <a href="variaveis.html">variaveis</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="escreva_leia.html">escreva e leia</a>
+            <a href="estruturas_condicionais.html">estruturas condicionais</a>
+            <a href="lacos_de_repeticao.html">laços de repetição</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="operadores_aritmeticos.html">operadores aritmeticos</a>
+            <a href="operadores_logicos.html">operadores logicos</a>
+            <a href="operadores_relacionais.html">operadores relacionais</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="maquinas_mecanicas.html">máquinas mecânicas</a>
+            <a href="maquinas_eletromecanicas.html">máquinas eletromecânicas</a>
+            <a href="maquinas_eletronicas.html">máquinas eletrônicas</a>
+        </div>
+    </footer>
+</body>
+<script src="../javascript/index.js"></script>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/variaveis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link do FontAwesome -->
+    <!--tenho que sair da pasta, entrar na css e acessar o arquivo index.css-->
+    <title>Por onde começar em Tecnologia?</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+
+        <div class="logomenu" onclick='interagemenu()'>&#9776;</div>
+
+
+        <div class="inicio">
+            <a href="index.htmlhtml">início</a>
+
+        </div>
+        <div class="temas">
+            <a href="fontes.html">fontes</a>
+        </div>
+        <div class="historia">
+            <a href="maquinas_mecanicas.html">história</a>
+        </div>
+        <div class="estudo">
+            <a href="como_estudar.html">estudo</a>
+        </div>
+
+    </header>
+
+    <!--NAV (menu)-->
+
+    <!--mesma coisa, crio a div do menu lateral e seu id para referenciá-la-->
+    <nav id="menulateral">
+        <div class="x" onclick="interagemenu()"> &times; </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="operadores_aritmeticos_english.html">
+            <span class="english">Versão em Inglês</span>
+        </a>
+        <h3>Assuntos Principais</h3>
+        <a href="logica_de_programacao.html">lógica</a>
+        <a href="algoritmo_código_fonte_e_programa.html">algoritmos</a>
+        <a href="variaveis.html">variáveis</a>
+        <a href="escreva_leia.html">escreva e leia</a>
+        <a href="operadores_aritmeticos.html">operadores</a>
+        <a href="estruturas_condicionais.html">estruturas condicionais</a>
+        <a href="lacos_de_repeticao.html">laços de repetição</a>
+        <a href="funcoes.html">funções</a>
+        <a href="programacao_orientada_a_objetos.html">programação orientada a objetos</a>
+    </nav>
+    <!-- ela-->
+
+
+    <!--MAIN-->
+    <main>
+        <!--REGRA DE LOCALIZAÇÃO: o que é, onde esta, quantidade/numeração-->
+
+        <div class="titulo_subtitulo">
+            <h1>Variáveis</h1> <br>
+            <p>O que varia?</p>
+        </div>
+
+        <div class="primeiro_paragrafo">
+            <span class="centralizar">Variáveis. O que são?</span><br>
+            Ah... as variáveis! Esse nome não te parece estranho? Que bom! Mas se você nunca ouviu falar nessa palavra,
+            ou é porque não frequentava as aulas de matemática ou porque não estava no planeta terra durante as aulas.
+            Brincadeiras a parte, as variáveis são exatamente o que elas significam na língua portuguesa: variam!
+            As variáveis, portanto, são valores variáveis. Uma hora podem representar algo, e mais tarde, representam
+            outra coisa.
+            Voltando a matemática, a variável mais famosa é o X. Vamos puxar um pouco na nossa memória uma equação bem
+            simples:
+            x + 5 = 7
+            E aí, te pergunto: qual é o valor de X? Bom, resolvendo a equação, temos...
+            x + 5 = 7
+            x = 7 - 5 (lembre da regra, o que soma de um lado, passa para o outro subtraindo...)
+            x = 2
+            Temos que nesta equação o valor de x é igual a 2.
+
+            Agora vamos a outra equação (e prometemos ser a última por enquanto):
+            2x + 10 = x - 3
+            Ih, não se desespere, a resolução é mais simples que você imagina:
+            2x + 10 = x - 3 (1° vamos separar os x de um lado, e os números isolados de outro, ok?)
+            2x - x = -10 - 3 (agora vamos resolver)
+            x = -13
+            Aqui, temos agora que x vale -13.
+            Bom, como assim? Antes x valia 2 e agora vale -13?? Sim! Afinal, x é uma variável. Ou seja, x não tem valor
+            fixo e definido. A cada momento ele tem um valor diferente.
+            Seguindo a mesma ideia, as variáveis em um programa de computador servem para armazenar valores variados.
+            Vamos ver um exemplo de um programa com uma variável:<br>
+
+            <span class="centralizar">programa { <br>
+                função início (){ <br>
+                inteiro x <br>
+                x = 2 <br>
+                x = 3 <br>
+                } <br>
+            </span>
+            Aqui, conforme apresentado na figura acima, criamos uma variável x cujo valor a ser armazenado deve ser um
+            número inteiro, e por isso a criamos como "inteiro x". Na sequência, atribuímos o valor 2 e depois o valor
+            5. Ou seja, na linha 6, x vale 2; mas na linha 7, x passou a valer 5.
+        </div>
+        <br>
+        <br>
+
+
+        <div class="parallax2">
+        </div>
+
+        <div class="segundo_paragrafo">
+            <span class="centralizar">Outros tipos de variáveis...</span><br>
+            Além de números inteiros, podemos criar variáveis para outros tipos de informações:
+            <br>
+            Existem 4 tipos principais de variáveis: <br>
+            <span class="centralizar">Inteiras</span><br>
+            São aquelas que vão guardar apenas valores inteiros como: 0, 1, 2, 3, 10, -1, -2, -3...
+            <span class="centralizar">Reais</span><br>
+            São aquelas que vão guardar apenas valores reais, isto é: 0.1, -0.9, 3.14... (decimais e negativos)
+            <span class="centralizar">Caractere</span><br>
+            São aquelas que vão guardar apenas letras e simbolos (caracteres), como... "André Roque" ou "Constelação"
+            <span class="centralizar">Lógicas</span><br>
+            São aquelas que reservam apenas valores lógicos, isto é, verdadeiros ou falsos, por exemplo: <br>
+            logico fazer_licao = true; <br>
+            Nesta linha declarei uma variavel logica chamada "fazer_licao" e atribui um valor verdadeiro a ela. <br>
+            <br>
+            Aqui pode-se surgir a dúvida de "mas será sempre assim?" "Elas podem mudar?" "Fazer_licao pode ser
+            falso?"...
+            E a resposta é sim! Lembra? São variáveis, são feitas para variar conforme o andamento do código. Mas
+            relaxe...vamos chegar lá.
+        </div>
+
+
+
+        <div class="parallax3">
+        </div>
+        <br>
+
+
+        <div class="terceiro_paragrafo">
+            <span class="centralizar">Concluindo</span><br>
+            Em resumo, as variáveis são caixinhas que ajudam o computador a lembrar das coisas. Cada tipo de variável tem um
+            formato diferente: alguns guardam números, outros guardam palavras, e outros ainda podem guardar várias
+            coisas ao mesmo tempo. Então, você pode usar as variáveis para:<br>
+            Armazenar a idade de alguém<br>
+            Guardar uma pontuação de um jogo.<br>
+            Armazenar um nome, como "Lucas" ou "Maria".<br>
+            Definir se uma coisa é verdadeira ou falsa, como se você terminou ou não sua lição de casa.<br>
+            <br>
+            <br>
+            <br>
+            <br>
+           
+        </div>
+       
+        <div class="proxima_anterior">
+            <div class="anterior">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="proxima">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="secaodofooter">
+            <a href="index.html">inicio</a>
+            <a href="algoritmo_código_fonte_e_programa_english.html">algoritmos</a>
+            <a href="variaveis.html">variaveis</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="escreva_leia.html">escreva e leia</a>
+            <a href="estruturas_condicionais.html">estruturas condicionais</a>
+            <a href="lacos_de_repeticao.html">laços de repetição</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="operadores_aritmeticos.html">operadores aritmeticos</a>
+            <a href="operadores_logicos.html">operadores logicos</a>
+            <a href="operadores_relacionais.html">operadores relacionais</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="maquinas_mecanicas.html">máquinas mecânicas</a>
+            <a href="maquinas_eletromecanicas.html">máquinas eletromecânicas</a>
+            <a href="maquinas_eletronicas.html">máquinas eletrônicas</a>
+        </div>
+    </footer>
+</body>
+<script src="../javascript/index.js"></script>
+
+</html>

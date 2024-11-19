@@ -1,0 +1,662 @@
+@font-face {
+    font-family: titulo_introducao;
+    src: url(../fontes/NotoSansTC-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: subtitulo_introducao;
+    src: url(../fontes/Dosis-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: topicos;
+    src: url(../fontes/Teko-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+/*HEADER*/
+header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 35px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    /* centraliza ne vertical */
+    justify-content: center;
+    /* centraliza ne horizontal */
+    position: fixed;
+    /*anotar este monstro e como funciona!*/
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    font-size: 25px;
+    /*tamanho da letra dos links*/
+    font-family: sans-serif;
+}
+
+header a:hover {
+    color: rgb(219, 31, 31);
+    cursor: pointer;
+}
+
+.inicio,
+.temas,
+.historia {
+    color: rgb(228, 86, 86);
+    font-size: 20px;
+    flex-direction: none;
+    margin-right: 10px;
+    float: right;
+    display: flex;
+    align-items: center;
+    background-color: red;
+}
+
+.estudo {
+    margin-right: 20px;
+}
+
+                                                                         /*NAV (menu)*/
+.logomenu {
+    color: black;
+    font-size: 25px;
+
+}
+
+.logomenu:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/* Estilo do menu lateral */
+nav {
+    height: 100%;
+    width: 0;  /* Inicia com a largura 0 (invisível) */
+    background-color:transparent;
+    backdrop-filter: blur(5px); /* Desfoque de fundo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 17;
+    transition: width 0.3s ease, background-color 0.3s ease; /* Transição suave para abrir e mudar a cor de fundo */
+    overflow-x: hidden;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave e ampla */
+    border-radius: 0 10px 10px 0; /* Bordas arredondadas à direita */
+    white-space: nowrap;
+}
+
+/* Estilo dos links no menu lateral */
+nav a {
+    font-family: sans-serif;
+    color: black; /* Cor dos links */
+    text-decoration: none;
+    font-size: 20px; /* Tamanho da fonte */
+    display: block;
+    background: none;
+    padding: 20px; /* Adiciona um padding maior para os links */
+    margin-bottom: 15px; /* Espaçamento entre os links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves para fundo e cor */
+    border-radius: 10px; /* Bordas arredondadas para os links */
+}
+
+/* Efeito hover nos links */
+nav a:hover {
+    color: #ff0000; /* Cor do texto ao passar o mouse (tom de laranja) */
+    background-color: rgba(51, 51, 51, 0.2); /* Fundo levemente claro ao passar o mouse */
+}
+
+/* Estilo do título (h3) do menu */
+nav h3 {
+    background: none;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px; /* Tamanho da fonte do título */
+    color: black;
+    padding: 20px 0; /* Adiciona um pouco de padding para o título */
+    border-radius: 5px; /* Bordas arredondadas para o título */
+    font-weight: 600; /* Deixa o título em negrito */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+}
+
+/* Estilo do botão de fechar (X) */
+nav .x {
+    position: absolute;
+    top: 20px;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav .x:hover {
+    color: red; /* Cor laranja ao passar o mouse */
+    cursor: pointer;
+}
+
+/* Para os itens do menu quando ele estiver aberto */
+
+.x {
+    MARGIN-TOP: 10PX;
+    width: 100%;
+    background: none;
+    float: right;
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.english{
+        font-family: sans-serif;
+        color: rgb(0, 9, 112);
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        background: none;
+        border-radius: 10px;
+        padding: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    }
+
+
+
+/*MAIN*/
+
+.introducao {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    background-image: url('../imagens/gif_introducao.gif');
+    background-size: 50%;
+
+}
+
+.introducao p,
+h1 {
+    color: black;
+    background: none;
+}
+
+.introducao h1 {
+    font-size: 60px;
+    font-family: titulo_introducao;
+}
+
+.introducao p {
+    font-size: 40px;
+    font-family: subtitulo_introducao;
+}
+
+/*conteudo*/
+.conteudo {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.conteudo p {
+    font-size: 30px;
+    font-family: topicos;
+    color: rgb(255, 0, 0);
+}
+
+/*sublinhado*/
+.conteudo u {
+    color: rgb(255, 0, 0);
+}
+
+/*par imagem texto 1*/
+/*controla a div*/
+.par_imagem1_texto1 {
+    width: 80%;
+    height: 400px;
+    margin-top: 120px;
+    justify-content: center;
+    flex-direction: row;
+    color: rgb(61, 0, 0);
+    display: flex;
+    background-color: rgb(206, 206, 206);
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.4);
+}
+
+/*controla a div da imagem*/
+.imagem_introducao_1 {
+
+    flex: 35%;
+    flex-direction: row;
+    display: flex;
+    /*SÓ FUNCIONA SE TIVER DISPLAY: FLEX;*/
+    align-items: center;
+    /* centraliza ne vertical */
+    justify-content: center;
+    /* centraliza ne horizontal */
+    background-color: rgb(206, 206, 206);
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 20px;
+    margin-top: 25px;
+}
+.texto_introducao_1 p{
+    text-align: center;
+}
+
+/*controla a imagem*/
+.imagem_introducao_1 img {
+    border-radius: 40px;
+    /* width: 350px;
+    height: 350px; */
+    background-color: rgb(206, 206, 206);
+    width: 370px;
+}
+
+/*controla a div do texto1*/
+.texto_introducao_1 {
+    flex: 50%;
+    font-size: 30px;
+    padding-top: 100px;
+    background-color: rgb(206, 206, 206);
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.texto_introducao_1 p{
+    text-align: center;
+    display: block;
+}
+
+/*controla os paragrafos do texto1*/
+
+/*controla os paragrafos e i do texto1*/
+.texto_introducao_1 i,
+p {
+    color: rgb(53, 53, 53);
+    background: none;
+}
+
+.imagem_introducao_2_ocuto{
+    display: none;
+}
+/*par imagem 2*/
+/*controla o par imagem2 texto2*/
+.par_imagem2_texto2 {
+    width: 80%;
+    height: 400px;
+    margin-top: 120px;
+    justify-content: center;
+    flex-direction: row;
+    color: rgb(61, 0, 0);
+    display: flex;
+    background-color: rgb(206, 206, 206);
+    border-radius: 40px;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.4);
+}
+
+.imagem_introducao_2 {
+
+    flex: 50%;
+    flex-direction: row;
+    display: flex;
+    /*SÓ FUNCIONA SE TIVER DISPLAY: FLEX;*/
+    align-items: center;
+    /* centraliza ne vertical */
+    justify-content: center;
+    /* centraliza ne horizontal */
+    background-color: rgb(206, 206, 206);
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+
+.imagem_introducao_2 img {
+    border-radius: 40px;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(206, 206, 206);
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+.texto_introducao_2 {
+    flex: 50%;
+    font-size: 30px;
+    padding-top: 100px;
+    padding-left: 30px;
+    background-color: rgb(206, 206, 206);
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 20px;
+}
+
+.texto_introducao_2 p,
+h1,
+i {
+    background: none;
+}
+
+
+
+/*controla a div da imagem*/
+
+/*par imagem texto 3*/
+.par_imagem3_texto3 {
+    width: 80%;
+    height: 400px;
+    margin-top: 120px;
+    justify-content: center;
+    flex-direction: row;
+    color: rgb(61, 0, 0);
+    display: flex;
+    background-color: rgb(206, 206, 206);
+    ;
+    border-radius: 40px;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.4);
+}
+
+
+.imagem_introducao_3 {
+
+    flex: 35%;
+    flex-direction: row;
+    display: flex;
+    /*SÓ FUNCIONA SE TIVER DISPLAY: FLEX;*/
+    align-items: center;
+    /* centraliza ne vertical */
+    justify-content: center;
+    /* centraliza ne horizontal */
+    background-color: rgb(206, 206, 206);
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    background: none;
+}
+
+.imagem_introducao_3 img {
+    border-radius: 40px;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(206, 206, 206);
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.4);
+}
+
+.texto_introducao_3 {
+    flex: 50%;
+    font-size: 30px;
+    padding-top: 100px;
+    padding-left: 30px;
+    background-color: rgb(206, 206, 206);
+    border-bottom-left-radius: 40px;
+    background: none;
+
+}
+
+.imagem_introducao_1,
+.imagem_introducao_2,
+.imagem_introducao_3{
+    min-width: 200px;  /* Tamanho mínimo para garantir que a imagem se ajuste */
+    min-height: 200px; /* Tamanho mínimo para garantir que a imagem se ajuste */
+}
+
+
+/*O que você verá?*/
+.texto_introducao_3 p {
+    padding-left: 230px;
+    background: none;
+}
+
+/*configuração para os dois*/
+.texto_introducao_3 i,
+p {
+    color: rgb(53, 53, 53);
+    background: none;
+}
+
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    height: 100px;
+    margin-top: 200px;
+}
+
+footer a {
+    color: white;
+    font-size: 20px;
+    background: none;
+    text-decoration: none;
+}
+
+.secaodofooter {
+    background-color: black;
+    text-align: center;
+    flex: 1;
+    flex-direction: row;
+
+}
+
+/*Animações*/
+
+/*nos ps (aparece)*/
+.par_imagem1_texto1,
+.par_imagem2_texto2,
+.par_imagem3_texto3 {
+    animation: aparecer 1s;
+    /*faz o appear em 1s*/
+    animation-timeline: view();
+    /*quando ele estiver 100% visivel*/
+}
+
+/*nos h1 e p (arrasta)*/
+h1,
+p {
+    animation: arrasta 1s;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around; /* Distribui as seções igualmente */
+    background-color: black; /* Cor de fundo do footer */
+    color: white; /* Cor do texto do footer */
+    padding: 20px 0;
+    height: 200px;
+}
+
+footer a {
+    color: white;
+    font-size: 10px;
+    background: none;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+footer a:hover{
+    color: rgb(0, 106, 255);
+    text-decoration: underline;
+}
+
+.secaodofooter {
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Organiza os links na vertical */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    height: 100%; /* Garante que a div ocupe toda a altura disponível */
+    padding: 10px;
+    gap: 10px;
+    background-color: black; /* Garante que o fundo seja preto */
+    color: white; /* Garante que o texto seja branco */
+}
+
+.secaodofooter a {
+    color: white; /* Garante que os links sejam visíveis */
+    font-size: 14px; /* Ajuste o tamanho da fonte, se necessário */
+    background: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/*O que isso faz???????????????*/
+@keyframes arrasta {
+    from {
+        translate: -100vw 0;
+        /*o que isso signfica?*/
+    }
+
+    to {}
+}
+
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .par_imagem1_texto1 {
+        width: 100%;
+    }
+
+    header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    header a{
+        font-size: 20px
+    }
+    .introducao p{
+        font-size: 30px;
+        text-align: center;
+    }
+    .conteudo{
+        margin-bottom: 100px;
+    }
+
+    .par_imagem1_texto1,
+    .par_imagem2_texto2,
+    .par_imagem3_texto3 {
+        flex: 1;
+        flex-direction: column;
+        width: 100%;
+        background-color: #c0c0c0;
+        margin-top: 40px;
+        border-radius: 40px;
+    }
+ 
+    .imagem_introducao_1, .imagem_introducao_2, .imagem_introducao_3 {
+        width:100%;
+        display:block;
+        text-align: center;  
+        background-color: #c0c0c0;
+        border-radius: 40px;
+    }
+     
+    .par_imagem2_texto2, .par_imagem3_texto3{
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    .imagem_introducao_1, .imagem_introducao_2, .imagem_introducao_3{
+        padding-top: 30px;
+    }
+     
+      .imagem_introducao_2_ocuto{
+        display: block;
+      }
+      
+      .texto_introducao_1, .texto_introducao_2, .texto_introducao_3 {
+        width:100%;
+        text-align: center;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+        background-color: #c0c0c0;
+        font-size: 20px;
+        border-radius: 40px;
+        padding: 18px;
+      }
+
+       .imagem_introducao_1 img, .imagem_introducao_2 img, .imagem_introducao_3 img {
+        width: 150px;
+        height: 150px;
+      }
+      footer{
+        margin-top: 50px;
+      }
+      .secaodofooter{
+        text-align: left;
+        padding: 10px;
+      }
+      .secaodofooter a{
+        font-size: 10px;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-around; /* Distribui as seções igualmente */
+        background-color: black; /* Cor de fundo do footer */
+        color: white; /* Cor do texto do footer */
+        padding: 20px 0;
+        height: 200px;
+    }
+    
+    footer a {
+        color: white;
+        font-size: 10px;
+        background: none;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+    footer a:hover{
+        color: rgb(0, 106, 255);
+        text-decoration: underline;
+    }
+    
+    .secaodofooter {
+        display: flex; /* Ativa o Flexbox */
+        flex-direction: column; /* Organiza os links na vertical */
+        justify-content: center; /* Centraliza o conteúdo verticalmente */
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+        height: 100%; /* Garante que a div ocupe toda a altura disponível */
+        padding: 10px;
+        gap: 10px;
+        background-color: black; /* Garante que o fundo seja preto */
+        color: white; /* Garante que o texto seja branco */
+    }
+    
+    .secaodofooter a {
+        color: white; /* Garante que os links sejam visíveis */
+        font-size: 14px; /* Ajuste o tamanho da fonte, se necessário */
+        background: none;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+}

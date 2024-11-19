@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/variaveis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link do FontAwesome -->
+    <!--tenho que sair da pasta, entrar na css e acessar o arquivo index.css-->
+    <title>Por onde começar em Tecnologia?</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+
+        <div class="logomenu" onclick='interagemenu()'>&#9776;</div>
+
+
+        <div class="inicio">
+            <a href="index.htmlhtml">início</a>
+
+        </div>
+        <div class="temas">
+            <a href="fontes.html">fontes</a>
+        </div>
+        <div class="historia">
+            <a href="maquinas_mecanicas.html">história</a>
+        </div>
+        <div class="estudo">
+            <a href="como_estudar.html">estudo</a>
+        </div>
+
+    </header>
+
+    <!--NAV (menu)-->
+
+    <!--mesma coisa, crio a div do menu lateral e seu id para referenciá-la-->
+    <nav id="menulateral">
+        <!--a tag span serve para atribuir estilos diferentes para trechos especificos sem mudar de linha, ex: 
+            <p> eu gosto de <span style = "blue"> correr </span><p>-->
+        <div class="x" onclick="interagemenu()"> &times;</div>
+        <!--?????????????POR QUE O MENU NÃO FUNCIONA!!!!!!!-->
+        <h3>Assuntos principais</h3>
+        <a href="algoritmo_código_fonte_e_programa.html">algoritmos</a>
+        <a href="variaveis.html">variáveis</a>
+        <a href="escreva_leia.html">escreva e leia</a>
+        <a href="operadores_aritmeticos.html">operadores</a>
+        <a href="estruturas_condicionais.html">estruturas condicionais</a>
+        <a href="laços_repetição">laços de repetição</a>
+        <a href="funções">funções</a>
+        <a href="pagina1">programação orientada a objetos</a>
+        <!-- <h3>História</h3>
+            <a  href="pagina1">máquinas mecânicas</a>
+            <a  href="pagina1">computadores eletromecânico</a> -->
+    </nav>
+    <!-- ela-->
+
+
+    <!--MAIN-->
+    <main>
+        <!--REGRA DE LOCALIZAÇÃO: o que é, onde esta, quantidade/numeração-->
+
+        <div class="titulo_subtitulo">
+            <h1>Fontes</h1> <br>
+            <p>referências</p>
+        </div>
+
+      
+        <span class="centralizar">O objetivo</span><br>
+        <div class="imagemtexto">
+            <div class="imagem">
+                <img src = "../imagens/etesp.jpg">
+            </div>
+            <div class="texto">
+                Este trabalho foi realizado por um aluno da ETESP, Escola Técnica de São Paulo, estudante do curso do
+                ensino
+                médio integrado ao técnico de Desenvolvimento de Sistemas (DS) como TCM (Trabalho de conclusão de
+                Módulo).
+                O objetivo era explicar de formas simples assuntos iniciais da área de lógica de programação, uma das
+                matérias curriculares integrantes do curso, abordando temas desde "O que é lógica" até "Programação
+                Orientada a Objetos".
+            </div>
+
+        </div>
+        <br>
+        <br>
+
+
+        <div class="parallax2">
+        </div>
+
+        <div class="imagemtexto">
+            <div class="texto">
+                Para este trabalho foi tido como base principalmente as aulas online do professor Gustavo Guanabara do
+                canal Curso em Video da plataforma YouTube. Seus vídeos foram essenciais para pensar e criar
+                principalmente as páginas referentes ao assunto de Programação Orientada a Objetos devido a sua incrível
+                didática.
+            </div>
+            <div class="imagem">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8mei6uVttho?si=XxxnkT4UX8a_3E5E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="imagemtexto">
+            <div class="texto">
+                
+
+              
+                Também foi utlizado os conhecimentos dos cursos gratuitos de algoritmos fornecidos pelo Instituto
+                Federal do Rio Grande do Sul
+                que pode ser acessado pela plataforma <a href="https://moodle.ifrs.edu.br/"><span
+                        style="color:blue">moodleifrs.edu.br</span></a>
+            </div>
+            <div class="imagem">
+                <img src = "../imagens/ifrs.JPG">
+            </div>
+            </div>
+
+            <div class="imagemtextomanual">
+                <div class="texto">
+                    Os vídeos do canal <a href="https://www.youtube.com/@manualdomundo"><span style="color:blue">Manual
+                            do Mundo</span></a> sobre informatica e programação serviram de grande apoio, ensinando
+                    muito de forma impírica, lúdica e ilustrativa.
+                </div>
+                <div class="imagem">
+                <img src = "../imagens/guanabara.JPG">
+                </div>
+            </div>
+            <div class="imagemtextopier">
+                <div class="imagem">
+                  <img src = "../imagens/Pierluigi_Piazzi.jpg">
+                </div>
+                <div class="texto">
+                    Os conhecimentos sobre as palestras do professor e polímata <a href = "https://www.youtube.com/watch?v=RlSCoYwnxr4"><span style = "color: blue">Luigi Piazzi</span></a>sobre como estudar e aprendendo inteligência também foram importantes.
+                    Seus estudos na área de aprendizagem tiveram significância para construir o conteúdo das páginas e criar uma página exclusiva para este assunto.
+                </div>
+            </div>
+        </div>
+
+
+         <div class = "proxima_anterior">
+            <div class = "anterior">
+               <a href = "estudo.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+           
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="secaodofooter">
+            <a href="index.html">inicio</a>
+            <a href="algoritmo_código_fonte_e_programa_english.html">algoritmos</a>
+            <a href="variaveis.html">variaveis</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="escreva_leia.html">escreva e leia</a>
+            <a href="estruturas_condicionais.html">estruturas condicionais</a>
+            <a href="lacos_de_repeticao.html">laços de repetição</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="operadores_aritmeticos.html">operadores aritmeticos</a>
+            <a href="operadores_logicos.html">operadores logicos</a>
+            <a href="operadores_relacionais.html">operadores relacionais</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="maquinas_mecanicas.html">máquinas mecânicas</a>
+            <a href="maquinas_eletromecanicas.html">máquinas eletromecânicas</a>
+            <a href="maquinas_eletronicas.html">máquinas eletrônicas</a>
+        </div>
+    </footer>
+</body>
+<script src="../javascript/index.js"></script>
+
+</html>

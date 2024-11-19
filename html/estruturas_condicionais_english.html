@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= ../css/index.css>
+    <!--tenho que sair da pasta, entrar na css e acessar o arquivo index.css-->
+    <title>Where to start learning technology?</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        
+        <div class = "logomenu" onclick = 'interagemenu()'>&#9776;</div>
+
+
+        <div class="inicio">
+            <a href="index_english.html">beginning</a>
+
+        </div>
+        <div class="temas">
+            <a href="fontes.html">fonts</a>
+        </div>
+        <div class="historia">
+            <a href="maquinas_mecanicas.html">history</a>
+        </div>
+        <div class="estudo">
+            <a href="como_estudar_english.html">study</a>
+        </div>
+
+    </header>
+
+    <!--NAV (menu)-->
+
+    <!--mesma coisa, crio a div do menu lateral e seu id para referenciá-la-->
+    <nav id="menulateral">
+        <div class="x" onclick="interagemenu()"> &times; </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="index_english.html">
+            <span class="english">Portuguese translate</span>
+        </a>
+        <h3>Main topics</h3>
+        <a href="logica_de_programacao_english.html">programming logic</a>
+        <a href="algoritmo_codigofonte_programa_english.html">algorithms</a>
+        <a href="variaveis_english.html">variables</a>
+        <a href="escreva_leia_english.html">write and read</a>
+        <a href="operadores_aritmeticos_english.html">aritmetical operators</a>
+        <a href="estruturas_condicionais_english.html">conditional structures</a>
+        <a href="laços_repetição_english.html">repeat loops</a>
+        <a href="funções_english.html">functions</a>
+        <a href="programacao_a_objetos_english.html">oriented objected programming</a>
+    </nav>
+    <!-- ela-->
+
+
+    <!--MAIN-->
+    <main>
+        <!--LOCATION RULE: what it is, where it is, quantity/number-->
+
+        <div class="titulo_subtitulo">
+            <h1>Conditional Structures</h1> <br>
+            <p>the first cool topic</p>
+        </div>
+
+        <div class="primeiro_paragrafo">
+            <span class="centralizar">Let's explore these terms...</span><br>
+            Conditional structures allow a program to execute different commands based on established conditions. It's the famous "if this, then do that... otherwise do this." They are present in many programming languages, and every professional in the field needs to know how to use them. They help decide which path the program should take based on what is true or false. This is essential in almost every application, since many times we need to make decisions like "If the age is greater than 18, then the person is an adult," or "If the number is positive, then display 'Positive'". Using these conditions makes the code more flexible and intelligent, as it can adapt to different situations.
+            <br>
+            <span class="centralizar">If</span><br>
+            <br>
+            <br>
+            <br>
+            Let's start with the basics.
+            The simplest conditional structure is the `if`. It checks a condition, and if that condition is true, it executes a block of code. If it's false, the program moves on to the next line. Sometimes, we use `else` to execute an alternative block of code if the condition is not true. Additionally, we can use `else if` to check multiple different conditions, offering several possibilities. Let's make an example to test if a person can drink alcoholic beverages based on their age:
+            <span class="codigo">
+                integer age;<br>
+
+                write ("Enter your age");<br>
+                read (age);<br>
+
+                if(age >= 18){<br>
+                write ("You can drink.")<br>
+                }<br>
+
+            </span>
+            <br><br><br>
+            In this example, the variable `age` is used to store a person's age. If the age is 18 or older, the `if` condition will be true, and the message "You can drink" will be displayed.
+        </div>
+
+        <div class="parallax2">
+        </div>
+
+        <div class="segundo_paragrafo">
+            <br>
+            <span class="centralizar">Else</span><br>
+            We can combine this example with another conditional structure, `else`. Here, it will check the opposite. If the expectations are not met:
+            <br>
+            <span class="codigo">
+                integer age;<br>
+
+                write ("Enter your age");<br>
+                read (age);<br>
+
+                if(age >= 18){<br>
+                write ("You can drink.")<br>
+                }<br>
+                else{<br>
+                write ("You cannot drink.")<br>
+                }
+            </span>
+            <br>
+            <br>
+            In this simple example with just one variable, it is possible to demonstrate "a million" possibilities with the `if` and `else` conditional structures.
+            <br>
+            <br>
+            <br>
+            <span class="centralizar">In conclusion...</span><br>
+            Conditional structures allow the code to make decisions based on specific conditions, making programming more dynamic. With them, it is possible to create much more interesting and complex interactions. The use of `if`, `else if`, and `else` provides flexibility to implement different behaviors depending on the context, which is essential to create interactive and intelligent applications. Dare to try other examples?
+        <br>
+        <br>
+        <br>
+        
+        </div>
+
+       
+        <div class="proxima_anterior">
+            <div class="anterior">
+               <a href = "escreva_leia_english.html"><i class="fa-solid fa-arrow-left"></a>
+            </div>
+            <div class="proxima">
+               <a href = "funcoes_english.html"> <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="secaodofooter">
+            <a href="index.html">inicio</a>
+            <a href="algoritmos.html">algoritmos</a>
+            <a href="variaveis.html">variaveis</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="escreva_e_leia.html">escreva e leia</a>
+            <a href="estuturas_condicionais.html">estruturas condicionais</a>
+            <a href="lacos_de_repeticao.html">laços de repetição</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="operadores_aritmeticos.html">operadores aritmeticos</a>
+            <a href="operadores_logicos.html">operadores logicos</a>
+            <a href="operadores_relacionais.html">operadores relacionais</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="maquinas_mecânicas.html">máquinas mecânicas</a>
+            <a href="operadores_logicos.html">máquinas eletromecânicas</a>
+            <a href="operadores_logicos.html">máquinas eletrônicas</a>
+        </div>
+    </footer>
+</body>
+<script src="../javascript/index.js"></script>
+
+</html>

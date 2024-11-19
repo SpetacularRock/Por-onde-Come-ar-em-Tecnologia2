@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/variaveis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link do FontAwesome -->
+    <!--tenho que sair da pasta, entrar na css e acessar o arquivo index.css-->
+    <title>Por onde começar em Tecnologia?</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+
+        <div class="logomenu" onclick='interagemenu()'>&#9776;</div>
+
+
+        <div class="inicio">
+            <a href="index.htmlhtml">início</a>
+
+        </div>
+        <div class="temas">
+            <a href="fontes.html">fontes</a>
+        </div>
+        <div class="historia">
+            <a href="maquinas_mecanicas.html">história</a>
+        </div>
+        <div class="estudo">
+            <a href="como_estudar.html">estudo</a>
+        </div>
+
+    </header>
+
+    <!--NAV (menu)-->
+
+    <!--mesma coisa, crio a div do menu lateral e seu id para referenciá-la-->
+    <nav id="menulateral">
+        <!--a tag span serve para atribuir estilos diferentes para trechos especificos sem mudar de linha, ex: 
+            <p> eu gosto de <span style = "blue"> correr </span><p>-->
+        <div class="x" onclick="interagemenu()"> &times;</div>
+        <!--?????????????POR QUE O MENU NÃO FUNCIONA!!!!!!!-->
+        <h3>Assuntos principais</h3>
+        <a href="algoritmo_código_fonte_e_programa.html">algoritmos</a>
+        <a href="variaveis.html">variáveis</a>
+        <a href="escreva_leia.html">escreva e leia</a>
+        <a href="operadores_aritmeticos.html">operadores</a>
+        <a href="estruturas_condicionais.html">estruturas condicionais</a>
+        <a href="laços_repetição">laços de repetição</a>
+        <a href="funções">funções</a>
+        <a href="pagina1">programação orientada a objetos</a>
+        <!-- <h3>História</h3>
+            <a  href="pagina1">máquinas mecânicas</a>
+            <a  href="pagina1">computadores eletromecânico</a> -->
+    </nav>
+    <!-- ela-->
+
+
+    <!--MAIN-->
+    <main>
+        <!--REGRA DE LOCALIZAÇÃO: o que é, onde esta, quantidade/numeração-->
+
+        <div class="titulo_subtitulo">
+            <h1>Máquinas Eletromecânicas</h1> <br>
+            <p>a segunda fase</p>
+        </div>
+        <div class = "primeiro_paragrafo">
+        As máquinas mecânicas ficaram no passado. Agora um novo elemento está presente, a eletricidade. Agora a graça é
+        tentar utilizar a eletricidade para mover peças mecânicas e criar máquinas...(advinha?) eletromecânicas.
+        <br>
+        As máquinas eletromecânicas representam um marco importante na evolução da computação, pois foram as precursoras
+        dos computadores digitais modernos. Elas combinavam elementos elétricos e mecânicos para realizar cálculos e
+        outras tarefas automatizadas. O desenvolvimento dessas máquinas ocorreu principalmente durante o início e a
+        primeira metade do século XX, com o objetivo de automatizar processos complexos, especialmente no campo das
+        operações militares e científicas.
+    </div>
+   
+
+
+            <div class="parallax2">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span class = "topico">Z2, de Konhad Zuse</span>
+            <div class="imagemtexto">
+                <div class="texto">
+                    O Z2, desenvolvido pelo engenheiro alemão Konrad Zuse em 1939, é um dos primeiros exemplos de uma
+                    máquina eletromecânica. Zuse foi pioneiro na criação de computadores, e o Z2 foi um avanço
+                    significativo em relação ao seu projeto anterior, o Z1. O Z2 usava relés (interruptores
+                    eletromagnéticos) para realizar cálculos binários, combinando componentes mecânicos e elétricos. O
+                    objetivo principal era automatizar cálculos complexos para engenharia e ciência, com o Z2 sendo uma
+                    máquina programável que poderia armazenar sequências de operações.
+                </div>
+                <div class="imagem">
+                    <img src="../imagens/konhadzuse.jpg">
+                </div>
+            </div>
+            
+           <span class = "topico">Bombe, de Alan Turing</span>
+            <div class="imagemtexto">
+                <div class="imagem">
+                    <img src="../imagens/bombe.jpg">
+                </div>
+                <div class="texto">
+                A Máquina Bombe foi criada por Alan Turing durante a Segunda Guerra Mundial para quebrar os códigos
+                gerados pelas máquinas de cifra Enigma, usadas pelos nazistas. Turing e sua equipe em Bletchley Park
+                desenvolveram a Bombe para realizar a busca de padrões nas mensagens codificadas, uma tarefa
+                extremamente difícil sem uma ferramenta de automação. <br>
+                A Bombe era uma máquina eletromecânica que usava uma série de discos rotativos para testar combinações
+                de configurações possíveis das rodas da Enigma. Ela foi essencial para decifrar comunicações militares
+                alemãs e ajudou significativamente na vitória dos Aliados.
+                <br> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            </div>
+
+        
+      
+
+        <div class="proxima_anterior">
+            <div class="anterior">
+                <a href="maquinas_mecanicas.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="proxima">
+                <a href="maquinas_eletronicas.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="secaodofooter">
+            <a href="index.html">inicio</a>
+            <a href="algoritmos.html">algoritmos</a>
+            <a href="variaveis.html">variaveis</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="escreva_e_leia.html">escreva e leia</a>
+            <a href="estuturas_condicionais.html">estruturas condicionais</a>
+            <a href="lacos_de_repeticao.html">laços de repetição</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="operadores_aritmeticos.html">operadores aritmeticos</a>
+            <a href="operadores_logicos.html">operadores logicos</a>
+            <a href="operadores_relacionais.html">operadores relacionais</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="maquinas_mecânicas.html">máquinas mecânicas</a>
+            <a href="operadores_logicos.html">máquinas eletromecânicas</a>
+            <a href="operadores_logicos.html">máquinas eletrônicas</a>
+        </div>
+    </footer>
+</body>
+<script src="../javascript/index.js"></script>
+
+</html>

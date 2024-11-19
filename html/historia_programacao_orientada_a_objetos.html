@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/variaveis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link do FontAwesome -->
+    <!--tenho que sair da pasta, entrar na css e acessar o arquivo index.css-->
+    <title>Por onde começar em Tecnologia?</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+
+        <div class="logomenu" onclick='interagemenu()'>&#9776;</div>
+
+
+        <div class="inicio">
+            <a href="index.htmlhtml">início</a>
+
+        </div>
+        <div class="temas">
+            <a href="fontes.html">fontes</a>
+        </div>
+        <div class="historia">
+            <a href="maquinas_mecanicas.html">história</a>
+        </div>
+        <div class="estudo">
+            <a href="como_estudar.html">estudo</a>
+        </div>
+
+    </header>
+
+    <!--NAV (menu)-->
+
+    <!--mesma coisa, crio a div do menu lateral e seu id para referenciá-la-->
+    <nav id="menulateral">
+        <!--a tag span serve para atribuir estilos diferentes para trechos especificos sem mudar de linha, ex: 
+            <p> eu gosto de <span style = "blue"> correr </span><p>-->
+        <div class="x" onclick="interagemenu()"> &times;</div>
+        <!--?????????????POR QUE O MENU NÃO FUNCIONA!!!!!!!-->
+        <h3>Assuntos principais</h3>
+        <a href="algoritmo_código_fonte_e_programa.html">algoritmos</a>
+        <a href="variaveis.html">variáveis</a>
+        <a href="escreva_leia.html">escreva e leia</a>
+        <a href="operadores_aritmeticos.html">operadores</a>
+        <a href="estruturas_condicionais.html">estruturas condicionais</a>
+        <a href="laços_repetição">laços de repetição</a>
+        <a href="funções">funções</a>
+        <a href="pagina1">programação orientada a objetos</a>
+        <!-- <h3>História</h3>
+            <a  href="pagina1">máquinas mecânicas</a>
+            <a  href="pagina1">computadores eletromecânico</a> -->
+    </nav>
+    <!-- ela-->
+
+
+    <!--MAIN-->
+    <main>
+        <!--REGRA DE LOCALIZAÇÃO: o que é, onde esta, quantidade/numeração-->
+
+        <div class="titulo_subtitulo">
+            <h1>História da Programação Orientada a Objetos</h1> <br>
+            <p>"história?! não era tecnologia?"</p>
+        </div>
+
+        <div class="segundo_paragrafo">
+            <span class="centralizar">Como surgiu?</span><br>
+            <br>
+            Primeiramente... o que é programação orientada a objetos? A Programação Orientada a Objetos (POO) é um
+            paradigma de programação que organiza o código em torno de
+            "objetos", que são instâncias de classes, em vez de focar em funções ou lógicas de controle. Existem vários
+            jeitos de programar. Vários paradigmas de programação. Vários tipos sugriram ao longo da história e o mais
+            recente (década de 70) e também muito utilizado é o "orientado a objetos" (OO, para os íntimos). O primeiro
+            que podemos citar é o de baixo nível:
+            <span class="topico">Baixo nível</span>
+            O modo de baixo nível remete ao <a
+                href="https://mentebinaria.gitbook.io/assembly/apendices/codigo-de-maquina">código de máquina</a>, isto
+            é números binários!
+            <span class="topico">Linear</span>
+            A programação linear é como se fosse uma lista de compras: "faça isso, faça isso, faça isso...". Sem desvios
+            condicionais (se (if) e else (senão)) de um modo contínuo. segue um modelo no qual o código é executado de
+            forma contínua, de uma linha para a outra, sem interrupções ou desvios. Nesse modelo, o programa é escrito
+            como uma sequência de instruções que são executadas uma após a outra, sem considerar a modularização ou a
+            reutilização de código.
+
+            <span class="topico">Estruturada</span>
+            Já a programação estruturada você conhece. É esta que estamos tratando durante todas as páginas (Não viu?!<a
+                href="logica_de_programacao.html">Vá para o ínico</a>). É a lógica de programação, os algoritmos... a
+            programação estruturada é um estilo que enfatiza o uso de blocos de código organizados em estruturas
+            controladas, como sequências, seleções (condições) e repetições (loops). Aqui você encontra os conceitos de
+            variáveis e seus tipos, estruturas condicionais, laços de repetição, comandos de entrada de dados (leia) e
+            saída (escreva), entre outros...
+            <span class="topico">Orientada a objetos</span>
+            E por fim a orientada a objetos é o paradigma que traz a ideia de objetos e classes, organizando o codigo
+            majoritariamente nessas duas grandes estruturas. Conta também com métodos (ações dos objetos ou classes) e
+            atributos (características dos objetos ou classes). Portanto a programação orientada a objetos (POO) é um
+            paradigma
+            de programação que organiza o código em torno de objetos, que representam entidades do mundo real. A POO é
+            um dos paradigmas mais populares na indústria de desenvolvimento de software.
+        </div>
+
+        <div class="parallax2">
+        </div>
+
+        <div class="imagemtexto">
+            <div class="texto">
+                Alan Kay foi um dos pioneiros da ideia de "objetos" no contexto da programação. Em 1970, durante seu
+                trabalho no Xerox PARC (Palo Alto Research Center), Kay e sua equipe começaram a desenvolver o conceito
+                de "Smalltalk", que seria uma das primeiras linguagens de programação puramente orientadas a objetos.
+                Para Kay, a ideia central de objetos não era apenas a organização de código, mas a criação de sistemas
+                computacionais mais naturais e intuitivos, modelando-os de forma semelhante ao comportamento do mundo
+                real. Ele acreditava que a programação deveria ser mais como uma conversa com a máquina, onde os objetos
+                interagiam entre si, em vez de apenas executarem instruções sequenciais.
+            </div>
+            <div class="imagem">
+                <img src="../imagens/alankay.webp">
+            </div>
+        </div>
+
+
+
+        <div class="primeiro_paragrafo">
+            Alan Kay foi um dos pioneiros da ideia de "objetos" no contexto da programação. Em 1970, durante seu
+            trabalho no Xerox PARC (Palo Alto Research Center), Kay e sua equipe começaram a desenvolver o conceito de
+            "Smalltalk", que seria uma das primeiras linguagens de programação puramente orientadas a objetos. Para Kay,
+            a ideia central de objetos não era apenas a organização de código, mas a criação de sistemas computacionais
+            mais naturais e intuitivos, modelando-os de forma semelhante ao comportamento do mundo real. Ele acreditava
+            que a programação deveria ser mais como uma conversa com a máquina, onde os objetos interagiam entre si, em
+            vez de apenas executarem instruções sequenciais. Smalltalk foi a primeira linguagem a integrar de forma
+            robusta o conceito de objetos, incluindo a ideia de encapsulamento, herança e polimorfismo, que são pilares
+            da POO. A linguagem permitia que desenvolvedores criassem objetos que pudessem interagir entre si, trocando
+            mensagens e realizando tarefas de forma modular. Com o tempo, o conceito de orientação a objetos começou a
+            se expandir para outras linguagens, como C++, Java e Python, que adotaram muitos dos princípios fundamentais
+            de <a href="https://pt.wikipedia.org/wiki/Smalltalk"><span style = "background: none;">Smalltalk</span></a>.
+
+        </div>
+
+        <div class="terceiro_paragrafo">
+            <span class="centralizar">Concluindo</span><br>
+            Para informações mais detalhadas sugiro que assistam ao vídeo "O que é programação orientada a objetos" do
+            professor Gustavo Guanabara, canal Curso em Vídeo. Este vídeo explica detalhadamente a história da
+            programação orienatada a objetos passando pelas das linguagens de baixo nivel, lineares, estruturadas o
+            small talk... Clique aqui para... quer dizer, clique <a href = "https://www.youtube.com/watch?v=KlIL63MeyMY"><span style = "background: none;">aqui</span></a> para assistir ao vídeo.
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+        <div class="proxima_anterior">
+            <div class="anterior">
+                <a href="funcoes.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="proxima">
+                <a href="programacao_orientada_a_objetos.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="secaodofooter">
+            <a href="index.html">inicio</a>
+            <a href="algoritmo_código_fonte_e_programa_english.html">algoritmos</a>
+            <a href="variaveis.html">variaveis</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="escreva_leia.html">escreva e leia</a>
+            <a href="estruturas_condicionais.html">estruturas condicionais</a>
+            <a href="lacos_de_repeticao.html">laços de repetição</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="operadores_aritmeticos.html">operadores aritmeticos</a>
+            <a href="operadores_logicos.html">operadores logicos</a>
+            <a href="operadores_relacionais.html">operadores relacionais</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="maquinas_mecanicas.html">máquinas mecânicas</a>
+            <a href="maquinas_eletromecanicas.html">máquinas eletromecânicas</a>
+            <a href="maquinas_eletronicas.html">máquinas eletrônicas</a>
+        </div>
+    </footer>
+</body>
+<script src="../javascript/index.js"></script>
+
+</html>

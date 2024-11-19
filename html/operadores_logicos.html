@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/variaveis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link do FontAwesome -->
+    <!--tenho que sair da pasta, entrar na css e acessar o arquivo index.css-->
+    <title>Por onde começar em Tecnologia?</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+
+        <div class="logomenu" onclick='interagemenu()'>&#9776;</div>
+
+
+        <div class="inicio">
+            <a href="index.htmlhtml">início</a>
+
+        </div>
+        <div class="temas">
+            <a href="fontes.html">fontes</a>
+        </div>
+        <div class="historia">
+            <a href="maquinas_mecanicas.html">história</a>
+        </div>
+        <div class="estudo">
+            <a href="como_estudar.html">estudo</a>
+        </div>
+
+    </header>
+
+    <!--NAV (menu)-->
+
+    <!--mesma coisa, crio a div do menu lateral e seu id para referenciá-la-->
+    <nav id="menulateral">
+        <!--a tag span serve para atribuir estilos diferentes para trechos especificos sem mudar de linha, ex: 
+            <p> eu gosto de <span style = "blue"> correr </span><p>-->
+        <div class="x" onclick="interagemenu()"> &times;</div>
+        <!--?????????????POR QUE O MENU NÃO FUNCIONA!!!!!!!-->
+        <h3>Assuntos principais</h3>
+        <a href="algoritmo_código_fonte_e_programa.html">algoritmos</a>
+        <a href="variaveis.html">variáveis</a>
+        <a href="escreva_leia.html">escreva e leia</a>
+        <a href="operadores_aritmeticos.html">operadores</a>
+        <a href="estruturas_condicionais.html">estruturas condicionais</a>
+        <a href="laços_repetição">laços de repetição</a>
+        <a href="funções">funções</a>
+        <a href="pagina1">programação orientada a objetos</a>
+        <!-- <h3>História</h3>
+            <a  href="pagina1">máquinas mecânicas</a>
+            <a  href="pagina1">computadores eletromecânico</a> -->
+    </nav>
+    <!-- ela-->
+
+
+    <!--MAIN-->
+    <main>
+        <!--REGRA DE LOCALIZAÇÃO: o que é, onde esta, quantidade/numeração-->
+
+        <div class="titulo_subtitulo">
+            <h1><span>Operadores Lógicos</span></h1> <br>
+        </div>
+
+        <div class="primeiro_paragrafo">
+            <span class="centralizar"> O que são?</span><br>
+            <br>
+            Os operadores lógicos são fundamentais na lógica computacional e na matemática, pois permitem realizar
+            operações que envolvem valores de verdade, como verdadeiro (V) ou falso (F). Os principais operadores
+            lógicos são AND, OR e NOT. Cada um desses operadores tem um comportamento específico quando aplicado a dois
+            ou mais valores lógicos. O operador AND (E) retorna verdadeiro apenas se ambos os operandos forem
+            verdadeiros. O OR (OU), por sua vez, retorna verdadeiro se pelo menos um dos operandos for verdadeiro. Já o
+            NOT (NÃO) inverte o valor de verdade de um único operando, ou seja, transforma verdadeiro em falso e
+            vice-versa.
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+
+        <div class="parallax2">
+        </div>
+
+
+        <div class="segundo_paragrafo">
+            <span class="centralizar">Mais um exemplo</span><br>
+            "Ah, que chato... Quando que eu vou utilizar isso, meu deus..." Bem, certamente você já saiu de casa, não?
+            (Só um palpite) E se é estudante certamente já fez uma prova tal como... o provão paulista ou um
+            vestibulinho. Vamos pensar sobre esta ação: Para ir fazer a prova você precisa ter alguns itens em mãos.
+            Como as chaves de sua residência por exemplo. Sem elas não dá pra sair. Ok, também é necessário ter algum
+            documento original com foto como o RG (registro geral) para fazer a prova. Portanto, só é possível fazer a
+            prova com as chaves e RG em mãos.<br>
+            É exatamente isso que os operadores lógicos fazem. Eles relacionam variáveis lógicas (neste caso as
+            variáveis "chave" e "rg") e verificam se a ação pode ser concluída (verdadeiro) ou não (falso). Colocando em
+            algoritmo fica:
+            <br><br>
+            <span class="codigo">
+                <span class="destaque">logico</span> rg = verdadeiro;<br>
+                logico chaves = verdadeiro;<br>
+
+                <span class="destaque">escreva</span> (logico <span class="destaque">e</span> chaves);<br><br>
+            </span>
+            Neste exemplo eu tenho o rg e as chves, pois estas variáves estão verdadeiras.
+            Portanto o resultado será verdadeiro. Agora, se eu não tiver uma dessas variáveis...<br>
+            <span class="codigo">
+                logico rg = verdadeiro;<br>
+                logico chaves = falso;<br>
+
+                escreva (logico <span class="destaque">e</span> chaves);<br>
+
+                O resultado será falso. Está é uma característica do operador lógico "e" (AND em algumas linguagens de
+                programação) onde as duas variáveis precisam ser verdadeiras para o resultado ser verdadeiro.
+        </div>
+
+
+
+        <div class="parallax3">
+        </div>
+        <br>
+
+
+        <div class="terceiro_paragrafo">
+            <span class="centralizar">Um exemplo mais avançado...</span><br>
+            Agora vamos utilizar uns conceitos mais avançados e que deixam mais iteressante... "se" e "então".
+            <br>
+            <span class="codigo">
+                caractere rg;<br>
+                caractere chaves;<br>
+
+                escreva("Está com o rg? Escreva "sim" ou "não""); <br>
+                leia(rg);<br>
+                escreva("Está com as chaves?" Escreva "sim" ou "não");<br>
+                leia(chaves);<br>
+                <br>
+                Se
+                Se((rg = "sim"<span class="destaque">e</span> chaves = "sim"){ <br>
+                escreva("Boa prova!");<br>
+                }<br>
+                senão{<br>
+                escreva("Está faltando algo!";)<br>
+                }<br>
+            </span>
+            Agora perceba que não utilizei variáveis lógicas e sim do tipo caractere! O algoritmo começa com as
+            variáveis sem valor fixo. Elas estão declaradas mas não tem um valor pré definido. Este valor é requisitado
+            pelo programa. E então ele verifica se ambos são correspondentes a "sim". Se apenas um deles for não, então
+            não funcionará.
+            <br>
+            <br>
+            <br>
+            <br>
+            <span class="centralizar">Outros operadores lógicos...</span>
+            <br>
+            <br>
+            <br>
+            <br>
+            Bem, os operadores lógicos são: "E", "Ou" e "não".<br> Como já vimos ,o operador E é usado
+            quando queremos que duas condições sejam verdadeiras ao mesmo tempo para que a ação seja realizada. Ou seja,
+            ele só retorna verdadeiro se todas as condições forem verdadeiras:<br>
+            <span class="codigo">ingresso = verdadeiro<br>
+                documento = verdadeiro<br>
+            </span>
+            Se a pessoa tem ingresso e tem documento, ela pode entrar no evento.
+            <span class="codigo">se (ingresso = verdadeiro e documento = verdadeiro)<br>
+                então
+                escreva("Você pode entrar no evento!")<br>
+                senão<br>
+                escreva("Você não pode entrar no evento.")</span><br>
+            Já o operador lógico ou é um pouco diferente. Com ele basta que um dos valores seja positivo para que o
+            resultado também seja. Indo para um exemplo, é como se para uma pessoa entrar em um evento, ela
+            pode ter ingresso ou carteirinha de estudante. Se ela tiver pelo menos um dos dois, ela pode entrar: <br>
+            <span class = "codigo">logico ingresso = falso;<br>
+            logico carteirinha = verdadeiro; <br>
+            se (ingresso = verdadeiro ou carteirinha = verdadeiro);<br>
+            então
+            escreva("Você pode entrar no evento!");<br>
+            senão
+            escreva("Você não pode entrar no evento.");
+        </span><br>
+            É verdadeiro se pelo menos uma das condições for verdadeira.<br>
+
+            E por último mas não menos importante, o operador "ou". O operador NÃO é usado para inverter o valor lógico
+            de uma condição. Se uma condição é verdadeira, o operador NÃO torna ela falsa; e se a condição é falsa, o
+            operador NÃO a torna verdadeira. Ou seja, ele inverte o valor da variável. É basicamente isso... O mais
+            fácil de lembrar, não? Suponha que temos uma condição onde verificamos se a pessoa não foi proibida de
+            entrar em um evento: <br>
+            <span class = "codigo">
+            proibido = falso<br>
+            se (não proibido)<br> então
+            escreva("Você pode entrar no evento!")<br>
+            senão
+            escreva("Você não pode entrar no evento.")<br>
+        </span>
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class = "parallax4">
+    <img src = "">
+</div>
+<br>
+<br>
+<br>
+<br>
+
+        <div class = "centralizar">Um breve resumo:</div> <br>
+        <br>
+            <div class="imagemtexto">
+                
+
+                <div class="texto">
+                 
+                   E: Verdadeiro se todos os valores forem verdadeiros.
+Exemplo: Você pode entrar no evento somente se tiver ingresso e documento.<br>
+OU: Verdadeiro se pelo menos um valor for verdadeiro.
+Exemplo: Você pode entrar no evento se tiver ingresso ou carteirinha de estudante.<br>
+NÃO: Inverte o valor lógico de uma condição.
+Exemplo: Se não estiver proibido de entrar no evento, você pode entrar.
+                </div>
+                <div class="imagem">
+
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+        </div>
+
+        <div class="proxima_anterior">
+            <div class="anterior">
+                <a href="operadores_relacionais.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="proxima">
+                <a href="estruturas_condicionais.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="secaodofooter">
+            <a href="index.html">inicio</a>
+            <a href="algoritmos.html">algoritmos</a>
+            <a href="variaveis.html">variaveis</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="escreva_e_leia.html">escreva e leia</a>
+            <a href="estuturas_condicionais.html">estruturas condicionais</a>
+            <a href="lacos_de_repeticao.html">laços de repetição</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="operadores_aritmeticos.html">operadores aritmeticos</a>
+            <a href="operadores_logicos.html">operadores logicos</a>
+            <a href="operadores_relacionais.html">operadores relacionais</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="maquinas_mecânicas.html">máquinas mecânicas</a>
+            <a href="operadores_logicos.html">máquinas eletromecânicas</a>
+            <a href="operadores_logicos.html">máquinas eletrônicas</a>
+        </div>
+    </footer>
+</body>
+<script src="../javascript/index.js"></script>
+
+</html>

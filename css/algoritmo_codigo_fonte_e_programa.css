@@ -1,0 +1,461 @@
+@font-face {
+    font-family: titulo_subtitulo;
+    src: url(../fontes/Dosis-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: codigo;
+    src: url(../fontes/Doto-VariableFont_ROND,wght.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../fontes/Bellefair-Regular.ttf);
+}
+
+* {
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+/*HEADER*/
+header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 35px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    /* centraliza ne vertical */
+    justify-content: center;
+    /* centraliza ne horizontal */
+    position: fixed;
+    /*anotar este monstro e como funciona!*/
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+    z-index: 10;
+    top: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    font-size: 25px;
+    /*tamanho da letra dos links*/
+    font-family: sans-serif;
+}
+
+header a:hover {
+    color: rgb(219, 31, 31);
+    cursor: pointer;
+}
+
+.inicio,
+.temas,
+.historia {
+    color: rgb(228, 86, 86);
+    font-size: 20px;
+    flex-direction: none;
+    margin-right: 10px;
+    float: right;
+    display: flex;
+    align-items: center;
+    background-color: red;
+}
+
+.estudo {
+    margin-right: 20px;
+}
+
+/*NAV (menu)*/
+.logomenu {
+    color: black;
+    font-size: 25px;
+
+}
+
+.logomenu:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/* Estilo do menu lateral */
+nav {
+    height: 100%;
+    width: 0;
+    /* Inicia com a largura 0 (invisível) */
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    /* Desfoque de fundo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 17;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    /* Transição suave para abrir e mudar a cor de fundo */
+    overflow-x: hidden;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra mais suave e ampla */
+    border-radius: 0 10px 10px 0;
+    /* Bordas arredondadas à direita */
+}
+
+/* Estilo dos links no menu lateral */
+nav a {
+    font-family: sans-serif;
+    color: black;
+    /* Cor dos links */
+    text-decoration: none;
+    font-size: 20px;
+    /* Tamanho da fonte */
+    display: block;
+    background: none;
+    padding: 20px;
+    /* Adiciona um padding maior para os links */
+    margin-bottom: 15px;
+    /* Espaçamento entre os links */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transições suaves para fundo e cor */
+    border-radius: 10px;
+    /* Bordas arredondadas para os links */
+}
+
+/* Efeito hover nos links */
+nav a:hover {
+    color: #ff0000;
+    /* Cor do texto ao passar o mouse (tom de laranja) */
+    background-color: rgba(51, 51, 51, 0.2);
+    /* Fundo levemente claro ao passar o mouse */
+}
+
+/* Estilo do título (h3) do menu */
+nav h3 {
+    margin-top: 70px;
+    background: none;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    /* Tamanho da fonte do título */
+    color: black;
+    padding: 20px 0;
+    /* Adiciona um pouco de padding para o título */
+    border-radius: 5px;
+    /* Bordas arredondadas para o título */
+    font-weight: 600;
+    /* Deixa o título em negrito */
+    letter-spacing: 1px;
+    /* Espaçamento entre letras */
+}
+
+/* Estilo do botão de fechar (X) */
+nav .x {
+    position: absolute;
+    top: 20px;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav .x:hover {
+    color: red;
+    /* Cor laranja ao passar o mouse */
+    cursor: pointer;
+}
+
+/* Para os itens do menu quando ele estiver aberto */
+
+.x {
+    MARGIN-TOP: 10PX;
+    width: 100%;
+    background: none;
+    font-size: 35px;
+    color: black;
+    text-align: center;
+}
+
+
+/*MAIN*/
+main {
+    flex-direction: column;
+}
+
+.titulo_subtitulo {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 228, 228);
+    justify-content: center;
+    background-image: url('../fundo.gif');
+    background-size: contain;
+    background-attachment: fixed;
+    /*efeito PARALLAX*/
+    margin-top: 35px;
+    box-shadow: inset 0 0 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+.titulo_subtitulo h1,
+p {
+    text-align: center;
+    background: none;
+}
+
+.titulo_subtitulo h1 {
+    font-family: titulo_subtitulo;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.titulo_subtitulo p {
+    font-family: titulo_subtitulo;
+    font-size: 40px;
+}
+
+/*primeiro paragrafo*/
+.primeiro_paragrafo {
+    /*valida o padding*/
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+    /* Quebra de linha automática */
+    overflow-wrap: break-word;
+    /* Quebra palavras longas */
+    /* background-color: blue; */
+    padding: 30px;
+    padding-right: 10px;
+    font-family: texto;
+    font-size: 30px;
+    background: linear-gradient(45deg, #94b0f7 10%, #ffffff);
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.primeiro_paragrafo i {
+    background: none;
+}
+
+.parallax2 {
+
+    width: 100%;
+    /* A largura será de 100% da tela */
+    height: 400px;
+    /* A altura da área de fundo */
+    /* Caminho do GIF */
+    background-size: contain;
+    /* Faz o fundo cobrir toda a área, se necessário */
+    background-attachment: fixed;
+    /* Efeito parallax: a imagem ficará fixa enquanto a página rola */
+    background-position: center;
+    /* Centraliza a imagem dentro do container */
+    /* Garante que o GIF não se repita */
+    background-image: url('../imagens/fundo.gif');
+    /* Aplica um desfoque sutil */
+    
+    filter: contrast(120%) brightness(100%) saturate(80%);
+    /* box-shadow = baixo, direita, desfoque e propagação*/
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.9); 
+    /* Sombra 3D */
+    /*mais sombras, mais brilho, cores mais vívidas.*/
+
+}
+
+.segundo_paragrafo {
+    /* background-color: red; */
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+    /* Quebra de linha automática */
+    overflow-wrap: break-word;
+    /* Quebra palavras longas */
+    padding: 30px;
+    padding-right: 10px;
+    font-family: texto;
+    font-size: 30px;
+    background: linear-gradient(to top, #94b0f7 10%, #ffffff);
+    padding-bottom: 100px;
+}
+
+.segundo_paragrafo i {
+    background: none;
+}
+
+/* Centralizar o conteúdo se necessário */
+.centralizar {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    background: none;
+    font-family: texto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+/* Configurações da navegação */
+.proxima_anterior {
+    bottom: 20px; /* Distância do fundo da tela */
+    left: 0; /* Coloca o container na lateral esquerda */
+    right: 0; /* Coloca o container na lateral direita */
+    display: flex; /* Flexbox para alinhar as setas */
+    justify-content: space-between; /* Distribui as setas nas extremidades */
+    padding: 0 10px; /* Adiciona um pouco de espaçamento nas laterais */
+    /* background: repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px); */
+    box-shadow: 0 0 10px 2px rgba(0, 76, 255, 0.6), 0 0 20px 4px rgba(0, 76, 255, 0.6); /* Efeito neon */
+    backdrop-filter: blur(10px); /* Aplica o blur ao fundo */
+    
+}
+
+
+/* Estilos para as setas */
+.anterior, .proxima {
+    font-size: 40px; /* Tamanho do ícone */
+    color: rgb(0, 0, 0);
+    width: 50px; /* Tamanho da área clicável */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Botões redondos */
+    cursor: pointer; /* Muda o cursor para mão */
+}
+
+/* Seta anterior (à esquerda) */
+.anterior{
+    margin-left: 30px;
+    left: 0; /* Coloca a seta colada à esquerda */
+}
+
+/* Seta próxima (à direita) */
+.proxima {
+    margin-right: 30px;
+    right: 0; /* Coloca a seta colada à direita */
+}
+
+/* Efeito de hover nas setas */
+.anterior:hover, .proxima:hover {
+    color: red;
+}
+
+
+
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: space-around; /* Distribui as seções igualmente */
+    background-color: black; /* Cor de fundo do footer */
+    color: white; /* Cor do texto do footer */
+    padding: 20px 0;
+    height: 200px;
+}
+
+footer a {
+    color: white;
+    font-size: 10px;
+    background: none;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+footer a:hover{
+    color: rgb(0, 106, 255);
+    text-decoration: underline;
+}
+
+.secaodofooter {
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Organiza os links na vertical */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    height: 100%; /* Garante que a div ocupe toda a altura disponível */
+    padding: 10px;
+    gap: 10px;
+    background-color: black; /* Garante que o fundo seja preto */
+    color: white; /* Garante que o texto seja branco */
+}
+
+.secaodofooter a {
+    color: white; /* Garante que os links sejam visíveis */
+    font-size: 14px; /* Ajuste o tamanho da fonte, se necessário */
+    background: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 0;
+}
+
+
+
+/*animações*/
+.titulo_subtitulo h1,
+p {
+    animation: aparecer 2s;
+
+}
+
+
+/*efeito de digitar*/
+/* .titulo_subtitulo h1{
+  animation: escrevendo 3s steps(34) 1s forwards, blink-caret 0.75s step-end infinite;
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 2rem;
+  display: inline-block; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  border-right: 2px solid black; 
+} 
+*/
+
+
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* @keyframes escrevendo {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      } */
+
+
+
+    @media screen and (max-width: 480px) {
+       
+    
+        header,
+        main,
+        footer {
+            width: 100%;
+        }
+        header a{
+            font-size: 15px;
+        }
+        .titulo_subtitulo{
+           justify-content: center;
+        }
+        .titulo_subtitulo h1{
+            font-size: 30px;
+        }
+        .titulo_subtitulo p{
+            font-size: 30px;
+        }
+       .parallax2{
+        height: 200px;  
+       }
+       footer{
+        height: 100px;
+       }
+       .secaodofooter a{
+        font-size: 10px;
+       }
+    }

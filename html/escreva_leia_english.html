@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=../css/variaveis.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--tenho que sair da pasta, entrar na css e acessar o arquivo index.css-->
+    <title>Where to start learning technology?</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        
+        <div class = "logomenu" onclick = 'interagemenu()'>&#9776;</div>
+
+
+        <div class="inicio">
+            <a href="index_english.html">beginning</a>
+
+        </div>
+        <div class="temas">
+            <a href="fontes.html">fonts</a>
+        </div>
+        <div class="historia">
+            <a href="maquinas_mecanicas.html">history</a>
+        </div>
+        <div class="estudo">
+            <a href="como_estudar_english.html">study</a>
+        </div>
+
+    </header>
+
+    <!--NAV (menu)-->
+
+    <!--mesma coisa, crio a div do menu lateral e seu id para referenciá-la-->
+    <nav id="menulateral">
+        <div class="x" onclick="interagemenu()"> &times; </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="escreva_leia.html">
+            <span class="english">English translate</span>
+        </a>
+        <h3>Main topics</h3>
+        <a href="logica_de_programacao_english.html">programming logic</a>
+        <a href="algoritmo_codigofonte_programa_english.html">algorithms</a>
+        <a href="variaveis_english.html">variables</a>
+        <a href="escreva_leia_english.html">write and read</a>
+        <a href="operadores_aritmeticos_english.html">aritmetical operators</a>
+        <a href="estruturas_condicionais_english.html">conditional structures</a>
+        <a href="laços_repetição_english.html">repeat loops</a>
+        <a href="funções_english.html">functions</a>
+        <a href="programacao_a_objetos_english.html">oriented objected programming</a>
+    </nav>
+
+    <!-- ela-->
+
+
+    <!--MAIN-->
+    <main>
+        <!--REGRA DE LOCALIZAÇÃO: o que é, onde esta, quantidade/numeração-->
+
+        <div class="titulo_subtitulo">
+            <h1>Write and Read</h1> <br>
+            <p>"okay, okay, professor..."</p>
+        </div>
+
+        <div class="primeiro_paragrafo">
+            <span class="centralizar">Input and output commands. What are they?</span><br>
+            Input (read) and output (write) commands are commands that allow interaction between the user and a computer
+            program. Input and output commands are essential for interacting with the user in computer programs.
+            <br>
+            <br>
+            <span class="centralizar">Output Commands</span>
+            <br><br>
+            The data output allows the information that is inside the program to be presented to the user, that is, we
+            can show something that is internal. To do this in Portugol Studio, we have to use the write command. Let's
+            look at the most classic programming example, the famous Hello World!
+            <br>
+            <span class="codigo">
+                program { <br>
+                function start() {<br>
+                write ("hello world!") <br>
+                }<br>
+                }<br>
+                I contextualized the command within an "initialized" source code, let's say. That's why the other lines
+                are "program" and "function".
+                In Python, for example, the command would be: <br>
+                print("hello world!");<br>
+                In C++, it would be: <br>
+                In Java, it would be: <br>
+                System.out.println("hello world!");<br>
+                In Csharp, it would be: <br>
+                Console.writeLine("hello world!"); <br>
+                <br>
+                You see how in each language it is written in different ways, but they all follow the same "idea", the
+                programming logic, the algorithms.
+                This is the data output command. Now write it down and write it down!
+            </span>
+        </div>
+
+        <div class="parallax2">
+        </div>
+
+        <div class="segundo_paragrafo">
+            <br><br>
+            <span class="centralizar">Input Commands</span><br><br>
+            But... what is a data entry? Well, every computer program has a data entry, although you may not always
+            notice it. You have certainly filled out a form with your name, selected the city where you live, or clicked
+            on a button on your computer. Well, when the computer asks for each of these pieces of information, it was
+            the way we entered data into the computer. The input command is used to receive information from the user,
+            that is, it allows the program to "read" or capture data provided by whoever is using the application.
+            Normally, we use the input command when we want the user to type something, such as their name, age, or even
+            an answer to a question asked by the program. But... what is a data entry? Well, every computer program has
+            a data entry, although you may not always notice it. You have certainly filled out a form with your name,
+            selected the city where you live, or clicked on a button on your computer. Well, when the
+            computer asks for each of these pieces of information, it was the way we entered data into the computer.
+            This command is usually called input in most modern languages ​​(like Python), or read in
+            pseudocodes and some educational languages. What the input command does is allow the user to
+            type something on the keyboard, and the program then uses that information during execution.<br>
+            Suppose you need to ask for a person's name, you should create a program like this:<br>
+            program{<br>
+            function(){ <br>
+            character name<br>
+            <br>
+            write ("Enter your name: ")<br>
+            read (name)<br>
+            } <br>
+            }<br>
+            <br>
+            <br>
+            <span class="centralizar">To sum it up...</span><br>
+            <br>
+            Output helps display important information such as calculation results, program status, or error messages,
+            while input allows the program to customize its execution based on the choices and input provided by the
+            user. By combining these two commands effectively, we can create dynamic and interactive programs.
+        </div>
+
+
+        <div class="proxima_anterior">
+            <div class="anterior">
+               <a href = "escreva_leia.html"> <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="proxima">
+               <a href = "lacos_de_repeticao_english.html"> <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        
+        <div class="secaodofooter">
+        <a href="index_english.html">Begin</a>
+        <a href="algoritmo_código_fonte_e_programa_english.html">algorithms</a>
+        <a href="variaveis_english.html">variables</a>
+        </div>
+        <div class="secaodofooter"> 
+        <a href="escreva_leia_english.html">write and read</a>
+        <a href="estruturas_condicionais_english.html">conditional structures</a>
+        <a href="lacos_de_repeticao_english.html">repetion loops</a>
+        </div>
+        <div class="secaodofooter"> 
+        <a href="operadores_aritmeticos_english.html">arithmetic operators</a>
+        <a href="operadores_logicos.html">logic operators</a>
+        <a href="operadores_relacionais.html">relacional operators</a>
+        </div>
+        <div class="secaodofooter"> 
+        <a href="maquinas_mecanicas.html">mechanic machines</a>
+        <a href="maquinas_eletromecanicas.html">eletromechanic machines</a>
+        <a href="maquinas_eletronicas.html">eletronic machines</a>
+            </div>
+    </footer>
+</body>
+<script src="../javascript/index.js"></script>
+
+</html>

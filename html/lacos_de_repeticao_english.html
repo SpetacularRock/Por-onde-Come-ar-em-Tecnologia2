@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=../css/variaveis.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--tenho que sair da pasta, entrar na css e acessar o arquivo index.css-->
+    <title>Where to start learning technology?</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        
+        <div class = "logomenu" onclick = 'interagemenu()'>&#9776;</div>
+
+
+        <div class="inicio">
+            <a href="index_english.html">beginning</a>
+
+        </div>
+        <div class="temas">
+            <a href="fontes.html">fonts</a>
+        </div>
+        <div class="historia">
+            <a href="maquinas_mecanicas.html">history</a>
+        </div>
+        <div class="estudo">
+            <a href="como_estudar_english.html">study</a>
+        </div>
+
+    </header>
+
+    <!--NAV (menu)-->
+
+    <!--mesma coisa, crio a div do menu lateral e seu id para referenciá-la-->
+    <nav id="menulateral">
+        <div class="x" onclick="interagemenu()"> &times; </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="lacos_de_repeticao.html">
+            <span class="english">Portuguese translate</span>
+        </a>
+        <h3>Main topics</h3>
+        <a href="logica_de_programacao_english.html">programming logic</a>
+        <a href="algoritmo_codigofonte_programa_english.html">algorithms</a>
+        <a href="variaveis_english.html">variables</a>
+        <a href="escreva_leia_english.html">write and read</a>
+        <a href="operadores_aritmeticos_english.html">aritmetical operators</a>
+        <a href="estruturas_condicionais_english.html">conditional structures</a>
+        <a href="laços_repetição_english.html">repeat loops</a>
+        <a href="funções_english.html">functions</a>
+        <a href="programacao_a_objetos_english.html">oriented objected programming</a>
+    </nav>
+    <!-- ela-->
+
+
+    <!--MAIN-->
+    <main>
+        <!--LOCATION RULE: what it is, where it is, quantity/numbering-->
+
+        <div class="titulo_subtitulo">
+            <h1>Loops</h1> <br>
+        </div>
+
+        <div class="primeiro_paragrafo">
+            <span class="centralizar">What are they?</span><br>
+            Loops are very important control structures in programming. They allow a block of code to be executed
+            multiple times based on a specific condition. Instead of writing the same code repeatedly, you can use a
+            loop to save time and make your code more efficient. There are three main types of loops: the `for` loop,
+            the `while` loop, and the `do-while` loop. Each one has a different way of controlling the number of
+            repetitions, but all aim to repeat an action while a condition is true.<br>
+            The `for` loop is typically used when we know exactly how many times we want to repeat the code. It consists
+            of three parts: initialization, the repetition condition, and increment or decrement. These parts are
+            checked at each iteration, and the loop continues executing until the defined condition becomes false. The
+            `while` loop is ideal when we don’t know the exact number of repetitions. It repeats the code block while
+            the condition is true, and the condition is checked before each execution. The `do-while` loop is similar to
+            the `while` loop, but the condition is checked after the code execution, ensuring that the code block is
+            executed at least once.<br>
+            
+            
+  </div>
+  <div class="parallax2">
+
+  </div>
+ 
+           
+            <div class = "segundo_paragrafo">
+            <span class="centralizar">Example:</span><br>
+                <br>
+                Suppose we want to print the numbers from 1 to 5 on the screen. Using the `for` loop, we can do this in
+                a concise and clear way:
+                <br>
+                <br>
+                <span class="codigo"> for (i from 1 to 5) do{<br>
+                    write(i)}</span><br>
+                <br>
+                <br>
+                In this example, the loop starts with i = 1 and goes up to i = 5, because the range(1, 6) function
+                generates the numbers from 1 to 5 (the number 6 is not included). With each iteration, the value of i
+                increases by 1 (this is the increment), and the value of i is printed on the screen. When i reaches 6,
+                the loop condition (i < 6) becomes false, and the loop ends. The result will be: </span>
+                    <br>
+                    <br>
+                </div>
+       
+
+
+        <div class="proxima_anterior">
+            <div class="anterior">
+                <a href="estruturas_condicionais_english.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="proxima">
+                <a href="funcoes_english.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+
+        <div class="secaodofooter">
+            <a href="index_english.html">Begin</a>
+            <a href="algoritmo_código_fonte_e_programa_english.html">algorithms</a>
+            <a href="variaveis_english.html">variables</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="escreva_leia_english.html">write and read</a>
+            <a href="estruturas_condicionais_english.html">conditional structures</a>
+            <a href="lacos_de_repeticao_english.html">repetion loops</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="operadores_aritmeticos_english.html">arithmetic operators</a>
+            <a href="operadores_logicos.html">logic operators</a>
+            <a href="operadores_relacionais.html">relacional operators</a>
+        </div>
+        <div class="secaodofooter">
+            <a href="maquinas_mecanicas.html">mechanic machines</a>
+            <a href="maquinas_eletromecanicas.html">eletromechanic machines</a>
+            <a href="maquinas_eletronicas.html">eletronic machines</a>
+        </div>
+    </footer>
+</body>
+<script src="../javascript/index.js"></script>
+
+</html>
